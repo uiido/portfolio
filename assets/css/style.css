@@ -58,19 +58,17 @@ main {
 }
 
 .about-me {
-    display: flex;
-    border: 0px;
-    padding: 3%;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
 .about-me-info {
     display: inline-block;
-    float: left;
-    border: 0px;
     background-color: #33526f;
-    padding: 10px;
-    /* add a textured or patterend image */
-    /* background-image: url(../images/) */
+    padding: 20px;
+    max-width: 50%
+        /* add a textured or patterend image */
+        /* background-image: url(../images/) */
 }
 
 .about-me-info h2 {
@@ -83,27 +81,33 @@ main {
 
 .about-me-photo {
     display: inline-block;
-    float: right;
-    border: 0px;
     background-color: #33526f;
-    flex: 0 0 400px;
+    max-width: 50%;
 }
 
 .work-sample {
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.work-samples {
+    display: inline-block;
     background-color: #436c92;
 }
 
 .contact {
-    display: flex;
-    background-color: #33526f;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
 .contact-me {
     display: inline-block;
+    background-color: #33526f;
 }
 
 .contact-links {
     display: inline-block;
+    background-color: #33526f;
 }
 
 footer {
