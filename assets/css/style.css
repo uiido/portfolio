@@ -15,7 +15,6 @@ body {
 header {
     background-color: #226483;
     height: 400px;
-    max-width: 100%;
     color: white;
     background-image: url(../images/Bartek-Aarbowicz-Unsplash-Stars.jpeg);
     background-size: cover;
@@ -51,7 +50,6 @@ nav a:active {
 }
 
 main {
-    min-width: 800px;
     margin: auto;
     /* top right bottom left */
     margin: 2% 0% 2% 0%;
@@ -68,6 +66,8 @@ main {
     display: inline-block;
     background-color: #33526f;
     vertical-align: top;
+    overflow: auto;
+    height: 450px;
     margin: 0% 2% 2% 0%;
 }
 
