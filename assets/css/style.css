@@ -53,55 +53,59 @@ nav a:active {
 main {
     min-width: 800px;
     margin: auto;
-    margin-top: min(1%);
-    margin-bottom: min(1%);
-    padding: min(1%);
+    /* top right bottom left */
+    margin: 2% 0% 2% 0%;
+    padding: 3%;
 }
 
 .about-me {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .about-me-info {
     display: inline-block;
     background-color: #33526f;
-    height: auto;
-    max-height: 450px;
     vertical-align: top;
+    margin: 0% 2% 2% 0%;
 }
 
 .about-me-info h2 {
     color: white;
+    font-size: 40px;
+    margin: 5%;
 }
 
 .about-me-info p {
     color: white;
+    margin: -3% 8% 8% 8%;
 }
 
 .about-me-photo {
     display: inline-block;
     background-color: #33526f;
-    height: auto;
     max-height: 450px;
-    width: 40vh;
     max-width: 450%;
+    margin: 0% 0% 2% 2%;
 }
 
 .work-sample {
     flex-wrap: wrap;
     flex-flow: column wrap;
+    margin: 0% 0% 2% 0%;
 }
 
 .work-samples {
     display: inline-block;
     background-color: #436c92;
+    height: 400px;
 }
 
 .contact {
     flex-wrap: wrap;
     flex-flow: column wrap;
-    margin-bottom: 2%;
+    margin: 0% 0% -2% 0%;
 }
 
 .contact-me {
@@ -125,10 +129,10 @@ footer {
     margin-top: auto;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 
     main,
     nav {
         flex-direction: column;
     }
-}
+} */
