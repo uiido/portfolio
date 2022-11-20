@@ -59,8 +59,6 @@ main {
 
 .about-me {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     border: 0px;
     padding: 3%;
 }
@@ -96,7 +94,16 @@ main {
 }
 
 .contact {
+    display: flex;
     background-color: #33526f;
+}
+
+.contact-me {
+    display: inline-block;
+}
+
+.contact-links {
+    display: inline-block;
 }
 
 footer {

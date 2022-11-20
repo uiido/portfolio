@@ -29,9 +29,9 @@
                 <p>I'm a designer and a developer with experience in graphic design, 2D animation, and full-stack web
                     development.</p>
             </article>
-            <div class="about-me-photo">
+            <aside class="about-me-photo">
                 <img src="./assets/images/profile-photo.jpeg" alt="Photo of Erin Boen" />
-            </div>
+            </aside>
         </div>
 
         <div class="work-sample" id="work">
@@ -43,23 +43,32 @@
         </div>
 
         <div class="contact" id="contacts">
-            <section class="contact-me">contact me info (email form?)</section>
+            <article class="contact-me">
+                <h2>Contact me here:</h2>
+                <form>
+                    <label for="full-name">Full name:</label>
+                    <input type="text" id="full-name" name="full-name" />
+                    <label for="email-add">Email:</label>
+                    <input type="email" id="email-add" name="email-add" />
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"
+                        cols="40">Please write your email message here.</textarea>
+                    <input type="button" value="Submit Email" />
+                </form>
+            </article>
+            <aside class="contact-links">
+                <h2>You can also follow me here:</h2>
+                <a href="GITHUB" target="_blank"><img src="./assets/images/Github_logo.png" width="75" height="75"
+                        alt="Github Logo" /></a>
+                <a href="LINKEDIN" target="_blank"><img src="./assets/images/LinkedIn_logo_initials.png" width="75"
+                        height="75" alt="Linkedin Logo"></a>
+            </aside>
         </div>
     </main>
 
     <footer>
-        <section>
-            <h2>General footer info</h2>
-            (contact, back to top, credits)
-        </section>
-        <section>
-            <h3>Follow me</h3>
-            <!--Image link to github-->
-            <!--Image link to linkedin-->
-            <!--Image link to ???-->
-            Icon links here
-        </section>
-    </footer>
+        <h2>General footer info</h2>
+        (contact, back to top, credits)
     </footer>
 
 </body>
