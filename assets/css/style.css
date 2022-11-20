@@ -51,24 +51,20 @@ nav a:active {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin: 20px;
+    min-width: 800px;
+    margin: auto;
+    margin-top: min(1%);
+    margin-bottom: min(1%);
+    padding: min(1%);
 }
 
-.about-me {
-    flex-wrap: wrap;
-    flex-flow: column wrap;
-}
+.about-me {}
 
 .about-me-info {
     display: inline-block;
     background-color: #33526f;
-    padding: 20px;
-    max-width: 50%
-        /* add a textured or patterend image */
-        /* background-image: url(../images/) */
+    height: 450px;
+    vertical-align: top;
 }
 
 .about-me-info h2 {
@@ -82,7 +78,7 @@ main {
 .about-me-photo {
     display: inline-block;
     background-color: #33526f;
-    max-width: 50%;
+    max-height: 450px;
 }
 
 .work-sample {
@@ -107,6 +103,7 @@ main {
 
 .contact-links {
     display: inline-block;
+    flex-direction: column;
     background-color: #33526f;
 }
 
@@ -119,8 +116,6 @@ footer {
     bottom: 0;
     margin-top: auto;
 }
-
-footer h2 {}
 
 @media screen and (max-width: 768px) {
 
