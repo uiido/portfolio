@@ -4,7 +4,7 @@
 
 body {
     font-family: georgia;
-    margin: 0;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,8 +16,8 @@ header {
     background-color: #226483;
     height: 400px;
     color: white;
-    background-image: url(../images/Bartek-Aarbowicz-Unsplash-Stars.jpeg);
-    background-size: cover;
+    /* background-image: url(../images/Bartek-Aarbowicz-Unsplash-Stars.jpeg); */
+    background-size: contain;
 }
 
 h1 {
@@ -67,8 +67,9 @@ main {
     background-color: #33526f;
     vertical-align: top;
     overflow: auto;
-    height: 450px;
-    margin: 0% 2% 2% 0%;
+    max-height: 450px;
+    max-width: 100%;
+    margin: 0% 1% 2% 0%;
 }
 
 .about-me-info h2 {
@@ -84,10 +85,9 @@ main {
 
 .about-me-photo {
     display: inline-block;
-    background-color: #33526f;
-    max-height: 450px;
-    max-width: 450%;
-    margin: 0% 0% 2% 2%;
+    max-width: 50%;
+    max-height: 100%;
+    margin: 0% 0% 2% 1%;
 }
 
 .work-sample {
@@ -99,7 +99,9 @@ main {
 .work-samples {
     display: inline-block;
     background-color: #436c92;
+    min-width: 31%;
     height: 400px;
+    margin: 1%;
 }
 
 .contact {
@@ -110,13 +112,30 @@ main {
 
 .contact-me {
     display: inline-block;
+    width: 70%;
+    height: 250px;
+    margin: 0% 1% 2% 0%;
     background-color: #33526f;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+}
+
+.contact-me form {
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    display: inline-block;
+    margin: auto;
+    text-align: left;
 }
 
 .contact-links {
     display: inline-block;
-    flex-direction: column;
+    width: 25%;
+    height: 250px;
+    margin: 0% 0% 2% 1%;
     background-color: #33526f;
+    vertical-align: top;
 }
 
 footer {
