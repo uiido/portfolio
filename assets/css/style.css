@@ -91,10 +91,44 @@ main {
     max-height: 450px;
 }
 
-#work-sample {
+#work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.featured {
+    margin: 2% 2% 2% 2%;
+    display: inline-block;
+    background-color: #436c92;
+    height: 300px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    vertical-align: top;
+}
+
+.featured img {
+    padding: 2%;
+    max-width: 350px;
+    max-height: 200px;
+}
+
+.featured h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.featured a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0% 10% 0% 10%;
+}
+
+.featured a:hover {
+    text-decoration: underline;
 }
 
 .work-samples {
@@ -102,7 +136,7 @@ main {
     display: inline-block;
     background-color: #436c92;
     height: 300px;
-    width: 29%;
+    width: 45%;
     color: white;
     text-align: center;
     vertical-align: top;
@@ -110,7 +144,7 @@ main {
 
 .work-samples img {
     padding: 2%;
-    max-width: 250px;
+    max-width: 350px;
     max-height: 200px;
 }
 
@@ -118,6 +152,11 @@ main {
     font-size: 24px;
     text-align: center;
     margin-top: 5%;
+}
+
+.work-samples img {
+    max-width: 350px;
+    max-height: 200px;
 }
 
 .work-samples a {
@@ -192,7 +231,35 @@ footer a {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
+/* For featured section */
+@media screen and (max-width: 1102px) {
+
+    .featured {
+        align-items: center;
+        height: 80%;
+        width: 60%;
+    }
+
+    .featured a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+}
+
+/* Using 938 instead of 768 to be more responsive */
 @media screen and (max-width: 938px) {
+
+    header,
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-top: 1%;
+    }
 
     body,
     p {
@@ -249,17 +316,8 @@ footer a {
         height: 100%;
     }
 
-}
-
-@media screen and (max-width: 768px) {
-
-    header,
-    nav {
-        display: flex;
-        flex-direction: column;
+    .contact-links {
+        width: 40%;
     }
 
-    nav a {
-        margin-top: -4%;
-    }
 }
