@@ -207,6 +207,10 @@ main {
     width: 100%;
 }
 
+.button {
+    color: #33526f;
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
@@ -288,6 +292,7 @@ footer a {
     .about-me-image {
         flex-direction: column;
         align-items: center;
+        max-width: 100%;
     }
 
     #work,
@@ -327,4 +332,14 @@ footer a {
         width: 40%;
     }
 
+}
+
+/* safeguarding images shrinking below default size */
+@media screen and (max-width: 768px) {
+
+    .featured img,
+    .work-samples img,
+    .contact-links img {
+        max-width: 80%;
+    }
 }
