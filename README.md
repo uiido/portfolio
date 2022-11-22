@@ -1,6 +1,6 @@
 # Erin Bowen's Portfolio
 
-[Link to my project]()
+[Link to my project](https://github.com/uiido/portfolio)
 
 [Link to my project page]()
 
