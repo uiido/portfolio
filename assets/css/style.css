@@ -16,8 +16,8 @@ header {
     background-color: #226483;
     height: 400px;
     color: white;
-    /* background-image: url(../images/Bartek-Aarbowicz-Unsplash-Stars.jpeg); */
-    background-size: contain;
+    background-image: url(../images/Bartek-Aarbowicz-Unsplash-Stars.jpeg);
+    background-size: cover;
 }
 
 h1 {
@@ -36,6 +36,7 @@ nav a {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     font-size: 20px;
+    margin-top: 4%;
     text-decoration: none;
     transition: all 300ms ease;
 }
@@ -49,16 +50,22 @@ nav a:active {
     transform: scale(1.2);
 }
 
-main {
+.container {
+    max-width: 1140px;
     margin: auto;
-    /* top right bottom left */
-    margin: 2% 0% 2% 0%;
-    padding: 3%;
+    background-color: black;
+    display: flex;
+    flex-wrap: flex;
+    flex-flow: column wrap;
+}
+
+main {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .about-me {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -67,9 +74,9 @@ main {
     background-color: #33526f;
     vertical-align: top;
     overflow: auto;
-    max-height: 450px;
-    max-width: 100%;
-    margin: 0% 1% 2% 0%;
+    width: 45%;
+    height: 450px;
+    margin-right: 2%;
 }
 
 .about-me-info h2 {
@@ -85,55 +92,78 @@ main {
 
 .about-me-photo {
     display: inline-block;
-    max-width: 50%;
+    width: 45%;
     max-height: 100%;
-    margin: 0% 0% 2% 1%;
 }
 
 .work-sample {
-    flex-wrap: wrap;
-    flex-flow: column wrap;
-    margin: 0% 0% 2% 0%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .work-samples {
+    margin: 0% 2% 0% 2%;
     display: inline-block;
     background-color: #436c92;
-    min-width: 31%;
-    height: 400px;
-    margin: 1%;
+    height: 300px;
+    width: 30%;
+    color: white;
+    text-align: center;
 }
 
+.work-samples h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.work-samples a {
+    text-decoration: none;
+    color: white;
+}
+
+.work-samples a:hover {
+    text-decoration: underline;
+}
+
+.work-samples img {}
+
 .contact {
-    flex-wrap: wrap;
-    flex-flow: column wrap;
-    margin: 0% 0% -2% 0%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-me {
-    display: inline-block;
-    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 250px;
-    margin: 0% 1% 2% 0%;
+    width: 80%;
     background-color: #33526f;
     vertical-align: top;
-    text-align: center;
     color: white;
+    margin-right: 2%;
+}
+
+.contact-me h2 {
+    font-size: 24px;
 }
 
 .contact-me form {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     display: inline-block;
-    margin: auto;
     text-align: left;
 }
 
 .contact-links {
-    display: inline-block;
-    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
     height: 250px;
-    margin: 0% 0% 2% 1%;
     background-color: #33526f;
     vertical-align: top;
 }
