@@ -2,7 +2,7 @@
 
 [Link to my project](https://github.com/uiido/portfolio)
 
-[Link to my project page]()
+[Link to my project page](https://uiido.github.io/portfolio/)
 
 ## Table of Contents
 - [Description](#description)
@@ -14,4 +14,4 @@ This project is a mock-up website portfolio for Erin Bowen. This website is mean
 
 ## Visuals
 
-![Website Sample](assets/images/FILENAMEHERE.png)
+![Website Sample](assets/images/full-screenshot.png)
